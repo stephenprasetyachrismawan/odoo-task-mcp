@@ -1,10 +1,30 @@
 class OdooTaskMcpError(Exception):
-    """Base error type for this project."""
+    """Base exception for Odoo Task MCP."""
 
 
 class OdooAuthenticationError(OdooTaskMcpError):
-    """Raised when Odoo authentication fails."""
+    pass
 
 
 class OdooRpcError(OdooTaskMcpError):
-    """Raised when XML-RPC call fails."""
+    pass
+
+
+class OdooAccessPolicyError(OdooTaskMcpError):
+    pass
+
+
+class OdooTaskNotFoundError(OdooTaskMcpError):
+    pass
+
+
+class ReadOnlyModeError(OdooTaskMcpError):
+    pass
+
+
+class StageResolutionError(OdooTaskMcpError):
+    pass
+
+
+class InvalidInputError(OdooTaskMcpError):
+    pass
